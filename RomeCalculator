@@ -9,13 +9,13 @@ public class RomeCalculator {
 
             while (true) {
                 System.out.print("Введите выражение: ");
-                String userIn = br.readLine();
-                if (userIn.toUpperCase().trim().equals("ВЫХОД"))
+                String userInput = br.readLine();
+                if (userInput.toUpperCase().trim().equals("ВЫХОД"))
                     break;
 
-                String[] expression = userIn.split("\\s");
+                String[] expression = userInput.split("\\s");
 
-                    if (expression.length > 3 || expression.length < 0) {
+                    if (expression.length > 3 || expression.length < 1) {
                     throw new RuntimeException("Не верный формат!");
                     }
 
