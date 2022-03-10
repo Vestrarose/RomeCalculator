@@ -9,7 +9,7 @@ public class Numbers {
 
     public static String arabicToRoman(int num) {
         StringBuilder sb = new StringBuilder();
-        int times = 0;
+        int times;
         String[] romans = new String[] { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X" };
         int[] ints = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
         for (int i = ints.length - 1; i >= 0; i--) {
