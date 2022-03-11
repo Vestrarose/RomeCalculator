@@ -4,7 +4,7 @@ import java.util.Map;
 public class Numbers {
 
     public static boolean toRoman(String s) {
-        return s.matches("[CLXVI]+");
+        return s.matches("[XVI]+");
     }
 
     public static String arabicToRoman(int num) {
