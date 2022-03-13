@@ -6,16 +6,9 @@ public class Calculation {
             int number2 = Numbers.romanToArabic(b);
             int result = calculateArabic(number1, number2, operator);
 
-            /* if (compare(number1) | compare(number2)) {
-                throw new RuntimeException("");
-            }*/
             if (result < 1)
                 throw new RuntimeException("Ошибка. В римской системе нет отрицательныых чисел");
             return Numbers.arabicToRoman(result);
-    }
-
-    public static boolean compare(int n) {
-        return n < 1 || n > 10;
     }
 
     public static int calculateArabic(int a, int b, String operator){
